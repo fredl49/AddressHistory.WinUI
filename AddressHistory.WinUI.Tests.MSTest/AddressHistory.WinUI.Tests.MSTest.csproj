@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net7.0-windows10.0.19041.0</TargetFramework>
+		<!--<TargetPlatformMinVersion>10.0.19041.0</TargetPlatformMinVersion>-->
+		<Platforms>x64</Platforms>
+		<UseWinUI>true</UseWinUI>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<IsPackable>false</IsPackable>
+		<RootNamespace>AddressHistory.WinUI.Tests.MSTest</RootNamespace>
+		<WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
+		<ProjectPriFileName>resources.pri</ProjectPriFileName>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageReference Include="coverlet.collector" Version="6.0.0">
+		  <PrivateAssets>all</PrivateAssets>
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.9.0-preview-23531-01" />
+		<PackageReference Include="MSTest.TestAdapter" Version="3.1.1" />
+		<PackageReference Include="MSTest.TestFramework" Version="3.1.1" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\AddressHistory.WinUI\AddressHistory.WinUI.csproj" />
+	</ItemGroup>
+</Project>

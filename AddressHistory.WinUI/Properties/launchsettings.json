@@ -1,0 +1,10 @@
+﻿{
+    "profiles": {
+      "AddressHistory.WinUI (Unpackaged)": {
+        "commandName": "Project"
+      },
+      "AddressHistory.WinUI (Package)": {
+        "commandName": "MsixPackage"
+      }
+    }
+}
